@@ -11,6 +11,7 @@ When entering your build and start command, read the descriptions carefully. The
    - You'll need to have locally set a `DATABASE_URL` environment variable in a `.env` file. You can get your database URL from whatever source you'd like to set up your database on (Railway, Elephant, etc.).
 
    - Normally you wouldn't interact with production databases from a local machine, but we'll ignore this for now (as we're just focusing on getting things deployed).
+     make sufre you add ./bin/www.js to the npm start as in package json
 
 2. Ensure the `DATABASE_URL` variable is set (not just locally but also wherever you're deploying to). This means that you'll need to look for where to enter environment variables when you're setting up your deployment - they may be hidden in an "advanced" dropdown when you're configuring your settings! Once you've found where to enter it, it'll be a key/value pair just like in your .env file. This allows the platform that you're deploying to to have that variable ready in the environment in which it's running your code (just like .env does when running on your own computer's environment).
 
